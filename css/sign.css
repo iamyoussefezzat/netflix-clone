@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/EG-en-20231106-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+}
+header img{
+    width: 35vh;
+    margin: 29px;
+    margin-top: -18px;
+    z-index: 3;
+
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #0000005b, transparent);
+}
+body::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #0000007c, transparent);
+}
+form{
+    text-align: center;
+    position: absolute;
+    padding: 160px 101px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 5%;
+    top: -49px;
+    left: 67vh;
+
+}
